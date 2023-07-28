@@ -1,3 +1,12 @@
 body{
-    background: blue;
+    display: flex;
+    justify-content: center;
+    font-family: 'Raleway', sans-serif;
+    background: rgb(117, 117, 214);
+}
+
+.fa-gear{
+    color: rgb(250, 246, 28);
+    font-size: 10em;
+    
 }
