@@ -168,16 +168,20 @@ nav a {
     font-size: 110%;
     padding: 15px 20px 15px 20px;
     border-radius: 15px 0% 0% 15px;
+    align-items: center;
 }
 
 .texte-formulaire{
     font-weight: 700;
     font-size: 18px;
-    width: 147px;
-    margin-left: 24px;
-    margin-right: 24px;
+    width: 195px;
+    text-align: center;
     padding: 0;
-    border: none;
+    border-top: 1px solid #F2F2F2;
+    border-bottom: 1px solid #F2F2F2;
+    
+    border-left: none;
+    border-right: none;
 }
 
 .btn-rechercher{
@@ -190,6 +194,27 @@ border: none;
 border-radius:0% 15px 15px 0%;
 width: 135px;
 cursor: pointer;
+}
+
+/* POUR VERSION MOBILE */
+.btn-rechercher-mobile{
+    display: none;
+    margin-left: -10px;
+    font-size: 18px;
+    font: #ffffff;
+    background-color: #0065FC;
+    border: none;
+    border-radius:15px;
+    width: 49px;
+    height: 49px;
+    padding: 15px 16px;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    cursor: pointer;
+}
+
+
+.fa-magnifying-glass{
+    color: #ffffff;
 }
 
 /* Filtre */
@@ -603,7 +628,7 @@ flex: 1 0 0;
         font-size: 13px;
     }
 
-    .Activites-card img{
+    .activites-cartes img{
         height: 200px;
         }
 }
@@ -668,10 +693,21 @@ flex: 1 0 0;
         justify-content: center;
     }
 
-    .btn-rechercher{
-        width: 49px;
-        height: 49px;
+    .texte-formulaire{
+        width: 100%;
+        margin-right: 0;
+        
     }
+
+    .btn-rechercher{
+        display: none;
+    }
+
+    .btn-rechercher-mobile{
+        display: block;
+    }
+
+   
 
     .filtres-liste{
         column-gap: 10px;
@@ -738,6 +774,7 @@ flex: 1 0 0;
     }
 
     .activites-cartes img{
+        max-width: none;
         height: 141px;
     }
 
