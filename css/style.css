@@ -201,7 +201,6 @@ cursor: pointer;
     display: none;
     margin-left: -10px;
     font-size: 18px;
-    font: #ffffff;
     background-color: #0065FC;
     border: none;
     border-radius:15px;
@@ -353,7 +352,7 @@ main{
 .cartes {
     display: flex;
     flex-direction: column;
-    min-width: 210px;
+    min-width: 182px;
     width: 100%;
     height: 215px;
     margin-bottom: 30px;
@@ -361,7 +360,7 @@ main{
 
 .hebergements-cartes img{
     width: 100%;
-    height: 124px;
+    min-height: 124px;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
 }
@@ -589,7 +588,11 @@ flex: 1 0 0;
 
     .hebergements {
         width: 100%;
+        max-width: 875px;
+        min-width: 710px;
     }
+
+    
 
     .populaires {
         display: flex;
@@ -609,9 +612,7 @@ flex: 1 0 0;
 
     .populaires-cards a{
         display: block;
-        flex: 1;
-
-        
+        flex: 1;  
     }
 
     .populaires-cards .card {
@@ -707,18 +708,45 @@ flex: 1 0 0;
         display: block;
     }
 
-   
-
     .filtres-liste{
         column-gap: 10px;
 
     }
 
+    .filtres{
+        width: 45%;
+    }
+
     .btn-filtres{
+        display: flex;
+        justify-content: center;
+        align-items: center;
         margin: 0;
         font-size: 14px; 
-        min-width: 162.5px;
+        width: 100%;
+        height: 50px;
+        padding-left: 0%;
+        padding-right: 0%;
     }
+
+
+
+
+    .fa-money-bill-wave{
+        font-size: 140%;          
+    }
+    .fa-person{
+        font-size: 150%;
+                    
+    }
+    .fa-heart{
+        font-size: 150%;           
+    }
+    .fa-fire{
+        font-size: 150%;           
+    }
+
+
        
     .fa-info{
         margin-right: 10px;
@@ -739,6 +767,7 @@ flex: 1 0 0;
         order: 1;
         margin-top: 15px;
         padding: 20px;
+        min-width: 0px;
     }
 
     .section-titre{
